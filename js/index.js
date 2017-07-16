@@ -73,9 +73,9 @@ function jsonp(url) {
 
 function createUrl(cityName = "佛山") {
   var urls = []
-  urls[0] = "http://api.k780.com/?app=weather.today&weaid=" + encodeURI(cityName) + "&appkey=26822&sign=c8395b7c31418e84aa5e8f4d207c749e&format=json&jsoncallback=getTodayWeather"
-  urls[1] = "http://api.k780.com/?app=weather.lifeindex&weaid=" + encodeURI(cityName) + "&appkey=26822&sign=c8395b7c31418e84aa5e8f4d207c749e&format=json&jsoncallback=getTodayLifeIndex"
-  urls[2] = "http://api.k780.com/?app=weather.future&weaid=" + encodeURI(cityName) + "&appkey=26822&sign=c8395b7c31418e84aa5e8f4d207c749e&format=json&jsoncallback=getFutureWeather"
+  urls[0] = "https://sapi.k780.com/?app=weather.today&weaid=" + encodeURI(cityName) + "&appkey=26822&sign=c8395b7c31418e84aa5e8f4d207c749e&format=json&jsoncallback=getTodayWeather"
+  urls[1] = "https://sapi.k780.com/?app=weather.lifeindex&weaid=" + encodeURI(cityName) + "&appkey=26822&sign=c8395b7c31418e84aa5e8f4d207c749e&format=json&jsoncallback=getTodayLifeIndex"
+  urls[2] = "https://sapi.k780.com/?app=weather.future&weaid=" + encodeURI(cityName) + "&appkey=26822&sign=c8395b7c31418e84aa5e8f4d207c749e&format=json&jsoncallback=getFutureWeather"
   return urls
 }
 var infos = document.getElementsByClassName("info");
