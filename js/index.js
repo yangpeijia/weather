@@ -71,7 +71,8 @@ function jsonp(url) {
 //   cityName.get(city)
 // }
 
-function createUrl(cityName = "佛山") {
+function createUrl(cityName) {
+  var cityName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '佛山';
   var urls = []
   urls[0] = "https://sapi.k780.com/?app=weather.today&weaid=" + encodeURI(cityName) + "&appkey=26822&sign=c8395b7c31418e84aa5e8f4d207c749e&format=json&jsoncallback=getTodayWeather"
   urls[1] = "https://sapi.k780.com/?app=weather.lifeindex&weaid=" + encodeURI(cityName) + "&appkey=26822&sign=c8395b7c31418e84aa5e8f4d207c749e&format=json&jsoncallback=getTodayLifeIndex"

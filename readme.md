@@ -5,11 +5,11 @@
 html5+css3+原生JS+jsonp(获取外部数据)
 
 # 预览
-网页版：[需用chrome浏览器打开](https://yangpeijia.github.io/weather/)  
+网页版：[地址](https://yangpeijia.github.io/weather/)  
 
 手机版：用微信扫下方二维码  
 
 ![二维码](./screen-shot/二维码.png)
 
 # 总结
-用了vue框架后再回来用原生js开发，没有了脚手架，很多兼容性的内容都需要自己去考虑，因此这个应用的兼容性稍显欠缺，很多比较先进的特性和ES6/7的语法，只能在chrome上展示，后面考虑会用webpack打包进行改进。
+用了vue框架后再回来用原生js开发，没有了脚手架，很多兼容性的内容都需要自己去考虑，没有全方位测试过，所以兼容性也许会考虑不周，后面考虑会用webpack打包进行改进。
