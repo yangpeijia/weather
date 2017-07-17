@@ -41,7 +41,7 @@ html {
     left: 0;
     width: 100%;
     padding-left: 20px;
-    background: rgba(100, 100, 100, 0.7);
+    background: rgba(145, 93, 56, 1);
     display: flex;
     flex-wrap: wrap;
 }
@@ -51,31 +51,35 @@ html {
     height: 60px;
     line-height: 60px;
     font-size: 30px;
-    flex: 0 0 200px
+    flex: 0 0 200px;
 }
 
 .header .weather-search {
     flex: auto;
+    font-size: 0
 }
 
 .header .weather-search .container {
     height: 60px;
-    line-height: 60px
+    line-height: 60px;
 }
 
 .header .weather-search .text {
     padding: 0 6px 0 6px;
     background: #fff;
     font-size: 14px;
+    vertical-align: middle;
     width: 240px;
     height: 30px;
     border: none;
     outline: none;
+    box-sizing: border-box
 }
 
 .header .weather-search .btn {
     width: 70px;
     height: 30px;
+    vertical-align: middle;
     border: none;
     background: rgba(255, 255, 255, 0.5);
     color: #333;
@@ -106,7 +110,8 @@ html {
 }
 
 .today-container .now-img {
-    margin-right: 10px
+    margin: 0 10px;
+    flex: 0 0 70px
 }
 
 @media screen and (max-width:650px) {
@@ -138,7 +143,8 @@ html {
 }
 
 .future-box {
-    flex: 1;
+    flex: auto;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     margin: 20px 16px 0 0;
     padding: 10px;
     background: rgba(100, 100, 100, 0.3);

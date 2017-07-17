@@ -122,11 +122,11 @@ var b_Len = futureBoxes.length
 var futureImgs = document.getElementsByClassName("future-img")
 
 function getFutureWeather(res) {
-  // console.log(res)
-  // if (res.success != '1') {
-  //   alert(res.msgid + ' ' + res.msg)
-  //   return
-  // } else {
+  console.log(res)
+    // if (res.success != '1') {
+    //   alert(res.msgid + ' ' + res.msg)
+    //   return
+    // } else {
   var data = res.result
   for (var i = 0; i < b_Len; i++) {
     var futureInfos = futureBoxes[i].getElementsByClassName("future-info")
